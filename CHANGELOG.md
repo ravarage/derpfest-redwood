@@ -27,8 +27,13 @@
 - BBR TCP congestion control, for steadier mobile data and Wi-Fi
 
 **Kernel**
-- Vajra 4.0 (Linux 5.4.302) with KernelSU-Next and SuSFS
+- Vajra 4.1 (Linux 5.4.302) with KernelSU-Next and SuSFS
+  - fewer CPU wakeups while idle, light tasks prefer the little cores
+  - modem and DSP wakeup reasons recorded for battery stats
 - zstd is the kernel's default zram compressor
+
+**Updates**
+- OTA updates: future builds arrive in **Settings → System → System updates**, no PC needed
 
 **Apps**
 - VibePlayer music player included

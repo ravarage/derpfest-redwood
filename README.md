@@ -44,7 +44,7 @@ Get-FileHash DerpFest-v17-20261016-redwood-Community-Stable.zip
 It must print:
 
 ```
-666ba3cc06b93081eefedd35a2ad071db6968223a47abf474bdfcb6084c2bf27
+8447b996c3a060bf47df1c75951fa77bc7380336243b729c02f77c2ab9c047e6
 ```
 
 If it doesn't match, download the zip again.
@@ -123,7 +123,12 @@ The first boot takes 3–5 minutes. Don't interrupt it.
 
 ## Updating to a newer build
 
-Updates of this ROM don't need a data format, and you keep your apps and files:
+Updates of this ROM don't need a data format, and you keep your apps and files.
+
+**Over the air (easiest):** go to **Settings → System → System updates**, tap **Download**, then
+**Install**, and reboot when it asks. Works from the 16 October 2026 build (Vajra 4.1) onwards.
+
+**Or by sideload:**
 
 1. Reboot to recovery (`adb reboot recovery`, or **Power + Volume up** from off).
 2. **Apply update → Apply from ADB**, then `adb sideload <new zip>`.
