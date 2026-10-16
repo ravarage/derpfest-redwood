@@ -1,6 +1,6 @@
 # DerpFest 17 for POCO X5 Pro 5G (redwood) — Installation Guide
 
-This guide takes you from a stock phone to DerpFest 17, step by step.
+This guide takes you from an unlocked phone to DerpFest 17, step by step.
 
 > ⚠️ **Installing wipes everything on the phone.** Back up photos, chats (WhatsApp/Telegram backups),
 > 2FA codes and anything else you need **before** you start.
@@ -10,6 +10,7 @@ This guide takes you from a stock phone to DerpFest 17, step by step.
 ## What you need
 
 - **Phone:** POCO X5 Pro 5G / Redmi Note 12 Pro Speed (codename **redwood**), charged to at least 50%
+- **Unlocked bootloader** and firmware from Global HyperOS 2 **`OS2.0.17.0.UMSMIXM`**
 - **A PC** (Windows, Linux or macOS) and a USB **data** cable
 - **Android platform-tools** (`adb` and `fastboot`):
   [download from Google](https://developer.android.com/tools/releases/platform-tools)
@@ -28,39 +29,7 @@ Put all four files in the platform-tools folder, so the commands below work with
 
 ---
 
-## Step 1 — Unlock the bootloader
-
-Skip this step if your bootloader is already unlocked.
-
-1. Log in to a **Xiaomi account** on the phone.
-2. Go to **Settings → About phone** and tap **OS version** 7 times to enable Developer options.
-3. Go to **Settings → Additional settings → Developer options**:
-   - turn on **OEM unlocking**
-   - turn on **USB debugging**
-   - open **Mi Unlock status** and tap **Add account and device**
-4. HyperOS also asks for unlock permission in the **Xiaomi Community** app. Follow the app's
-   steps.
-5. Xiaomi makes you wait (usually 72 hours or 7 days). When the wait is over, turn off the phone,
-   hold **Power + Volume down** to enter fastboot, connect it to the PC and run **Mi Unlock Tool**.
-
-> Unlocking wipes the phone.
-
----
-
-## Step 2 — Check your firmware
-
-This ROM needs the firmware from **Global HyperOS 2 `OS2.0.17.0.UMSMIXM`**.
-
-- **If the phone already runs `OS2.0.17.0.UMSMIXM`** (shown in **Settings → About phone**), skip
-  this step.
-- **Otherwise,** flash the official **fastboot ROM** of that version with **Mi Flash Tool** first.
-  - At the bottom of Mi Flash, select **"clean all"**.
-  - **Never select "clean all and lock".** A locked bootloader on a custom ROM can brick the
-    phone.
-
----
-
-## Step 3 — Check the download (optional, recommended)
+## Step 1 — Check the download (optional, recommended)
 
 Make sure the zip downloaded completely:
 
@@ -82,7 +51,7 @@ If it doesn't match, download the zip again.
 
 ---
 
-## Step 4 — Flash the boot images
+## Step 2 — Flash the boot images
 
 1. Turn the phone off. Hold **Power + Volume down** until the **FASTBOOT** screen appears.
 2. Connect it to the PC and check it's detected:
@@ -110,7 +79,7 @@ If it doesn't match, download the zip again.
 
 ---
 
-## Step 5 — Format data
+## Step 3 — Format data
 
 In the recovery (use the volume keys to move, the power key to select, or tap the screen):
 
@@ -122,7 +91,7 @@ In the recovery (use the volume keys to move, the power key to select, or tap th
 
 ---
 
-## Step 6 — Install the ROM
+## Step 4 — Install the ROM
 
 1. In the recovery, choose **Apply update → Apply from ADB**.
 2. On the PC, run:
@@ -141,7 +110,7 @@ The first boot takes 3–5 minutes. Don't interrupt it.
 
 ---
 
-## Step 7 — After the first boot
+## Step 5 — After the first boot
 
 - **Root (optional):** the kernel already includes KernelSU-Next. Install the manager app:
   [KernelSU-Next 3.4.2](https://github.com/KernelSU-Next/KernelSU-Next/releases/download/v3.4.2/KernelSU_Next_v3.4.2_33355-release.apk).
@@ -182,7 +151,7 @@ Updates of this ROM don't need a data format, and you keep your apps and files:
 |---|---|
 | `fastboot devices` shows nothing | Use another USB port or cable; on Windows install the Google USB driver |
 | `adb sideload` says "no devices" | Make sure the recovery is in **Apply from ADB** mode, then retry |
-| Stuck on the boot animation for more than 10 minutes | Go back to recovery and **Format data** again (Step 5) |
+| Stuck on the boot animation for more than 10 minutes | Go back to recovery and **Format data** again (Step 3) |
 | Phone boots back into recovery | Format data again, then sideload the ROM again |
 | Want to go back to stock | Flash the official fastboot ROM with Mi Flash, **"clean all"** (never "clean all and lock") |
 
