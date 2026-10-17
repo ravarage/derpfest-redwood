@@ -1,6 +1,15 @@
 {
   "response": [
     {
+      "datetime": 1792248206,
+      "filename": "DerpFest-v17-20261017-redwood-Community-Stable.zip",
+      "id": "7e1d394cf3ff0e8bcc1d31e173242cc047183a1152ffb33dc1c4278d45c04c87",
+      "romtype": "Community",
+      "size": 3209517187,
+      "url": "https://dl.ravarage.xyz/redwood/20261017/DerpFest-v17-20261017-redwood-Community-Stable.zip",
+      "version": "17"
+    },
+    {
       "datetime": 1792159150,
       "filename": "DerpFest-v17-20261016-redwood-Community-Stable.zip",
       "id": "8447b996c3a060bf47df1c75951fa77bc7380336243b729c02f77c2ab9c047e6",

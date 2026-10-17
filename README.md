@@ -20,7 +20,7 @@ This guide takes you from an unlocked phone to DerpFest 17, step by step.
 
   | File | What it is |
   |---|---|
-  | `DerpFest-v17-20261016-redwood-Community-Stable.zip` | The ROM |
+  | `DerpFest-v17-20261017-redwood-Community-Stable.zip` | The ROM |
   | `boot.img` | Kernel (Vajra 4.0 with KernelSU-Next) |
   | `vendor_boot.img` | Recovery and vendor ramdisk |
   | `dtbo.img` | Device tree overlay |
@@ -35,16 +35,16 @@ Make sure the zip downloaded completely:
 
 ```
 # Linux / macOS
-sha256sum DerpFest-v17-20261016-redwood-Community-Stable.zip
+sha256sum DerpFest-v17-20261017-redwood-Community-Stable.zip
 
 # Windows (PowerShell)
-Get-FileHash DerpFest-v17-20261016-redwood-Community-Stable.zip
+Get-FileHash DerpFest-v17-20261017-redwood-Community-Stable.zip
 ```
 
 It must print:
 
 ```
-8447b996c3a060bf47df1c75951fa77bc7380336243b729c02f77c2ab9c047e6
+7e1d394cf3ff0e8bcc1d31e173242cc047183a1152ffb33dc1c4278d45c04c87
 ```
 
 If it doesn't match, download the zip again.
@@ -97,7 +97,7 @@ In the recovery (use the volume keys to move, the power key to select, or tap th
 2. On the PC, run:
 
    ```
-   adb sideload DerpFest-v17-20261016-redwood-Community-Stable.zip
+   adb sideload DerpFest-v17-20261017-redwood-Community-Stable.zip
    ```
 
 3. Wait until it finishes, which takes several minutes.

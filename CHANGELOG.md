@@ -1,5 +1,37 @@
 # Changelog
 
+## 17 October 2026
+
+### Source
+
+- DerpFest 17, based on Android 17 (`CP2A.260605.016`)
+- Android security patch: **1 October 2026**
+- Synced with the latest sources (Redwood-AOSP device and vendor trees)
+- Build type: `user`, signed with private keys
+
+### Device
+
+**Updates**
+- OTA is on: this build installs from **Settings → System → System updates** on the 16 October build, no PC and no data wipe needed. Later builds arrive the same way
+
+**Graphics**
+- The whole 64-bit Adreno stack is now v863.1: OpenGL ES, OpenCL and the GPU tone mapper join the Vulkan driver
+- Fixed browsers (Brave, Chrome) flickering black: their GPU process crashed in the new driver; that call now goes to v863's own helper
+- Camera, HDR video and OpenCL apps (Geekbench, MACE in the camera) tested on the new drivers
+- 32-bit graphics, gralloc and the GPU firmware stay stock
+
+**Audio and microphone**
+- Fixed empty voice notes in WhatsApp (and other apps that record: Telegram, recorders, voice search). The audio driver sent a recording to a broken capture stream whenever it thought another recording was running, and after the first "Hey Google" it thought that forever
+- "Hey Google" runs on the audio DSP again (sound trigger HAL and Voice Match enrollment restored), so it no longer keeps the microphone open all the time
+- Ambient Music (Now Playing) no longer holds the microphone until reboot when the input gives no sound
+- ViPER4AndroidFX included (from Redwood-AOSP)
+
+**System**
+- Fixed the lock screen clock showing GMT (wrong time) after a reboot when a root module (for example BRENE) rewrote Android's saved settings with the wrong permissions: the time zone and other saved settings are no longer lost at boot
+
+**Kernel**
+- Vajra 4.1 (Linux 5.4.302) with KernelSU-Next and SuSFS, unchanged
+
 ## 16 October 2026
 
 ### Source
