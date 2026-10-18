@@ -121,6 +121,20 @@ The first boot takes 3–5 minutes. Don't interrupt it.
 
 ---
 
+## Play Integrity
+
+DerpFest's own spoofing gets in the way of the Play Integrity setup. Turn it off first:
+
+1. Open **Settings** and search for **Spoofing**.
+2. Turn **off** **Google Play Integrity spoof**.
+
+<img src="images/turn-off-spoofing.jpg" alt="Spoofing page with Google Play Integrity spoof turned off" width="300">
+
+3. Then follow the Play Integrity guide in the Redwood ROMs group:
+   [t.me/redwoodroms/100380/210781](https://t.me/redwoodroms/100380/210781).
+
+---
+
 ## Updating to a newer build
 
 Updates of this ROM don't need a data format, and you keep your apps and files.
