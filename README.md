@@ -162,10 +162,18 @@ Updates of this ROM don't need a data format, and you keep your apps and files.
 
 ---
 
+## Sources
+
+- Device tree: [ravarage/android_device_xiaomi_redwood](https://github.com/ravarage/android_device_xiaomi_redwood) (branch `seventeen`)
+- Vendor tree: [ravarage/android_vendor_xiaomi_redwood](https://github.com/ravarage/android_vendor_xiaomi_redwood) (branch `seventeen`)
+- Kernel: [genie1997/android_kernel_xiaomi_redwood](https://github.com/genie1997/android_kernel_xiaomi_redwood) (Vajra)
+- ROM: [DerpFest-AOSP](https://github.com/DerpFest-AOSP)
+
 ## Credits
 
 - [@itsraiharshit](https://t.me/itsraiharshit) and
-  [Redwood-AOSP](https://github.com/Redwood-AOSP) for the device and vendor trees
+  [Redwood-AOSP](https://github.com/Redwood-AOSP) for the original device and vendor trees
+- MANUCHEHR for sending the Adreno v863.1 driver
 - genie for the [Vajra kernel](https://github.com/genie1997/android_kernel_xiaomi_redwood)
-- Hugo and StevenMX for the Adreno v863.1 Vulkan driver
+- Hugo and StevenMX for the Adreno v863.1 driver
 - The DerpFest team

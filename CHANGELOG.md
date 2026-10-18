@@ -70,5 +70,6 @@
 **Apps**
 - VibePlayer music player included
 
-Full technical details of the device changes:
-[Redwood-AOSP/android_device_xiaomi_redwood#1](https://github.com/Redwood-AOSP/android_device_xiaomi_redwood/pull/1)
+Full technical details of the device changes: the commit history of
+[ravarage/android_device_xiaomi_redwood](https://github.com/ravarage/android_device_xiaomi_redwood/commits/seventeen)
+and [ravarage/android_vendor_xiaomi_redwood](https://github.com/ravarage/android_vendor_xiaomi_redwood/commits/seventeen)
